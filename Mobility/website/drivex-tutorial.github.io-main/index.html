@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beyond Self-Driving: Exploring Three Levels of Driving Automation | ICCV 2025</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="header" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+          <img src="/assets/images/logo.png" alt="Logo">
+      </div> <!-- #logo -->
+      <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbar" class="offcanvas offcanvas-end">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div> <!-- .offcanvas-header -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#video">Video</a></li>
+            <li class="nav-item"><a href="#intro">Introduction</a></li>
+            <li class="nav-item"><a href="#schedule">Schedule</a></li>
+            <li class="nav-item"><a href="#resources">Resources</a></li>
+            <li class="nav-item"><a href="#organizers">Organizers</a></li>
+            <li class="nav-item"><a href="#acknowledgments">Acknowledgments</a></li>
+          </ul>
+        </div> <!-- .offcanvas-body -->
+      </div> <!-- .offcanvas -->
+    </div> <!-- .container -->
+  </div> <!-- #header -->
+  <div id="content">
+    <div id="hero">
+      <div class="container">
+        <h1>Beyond Self-Driving: Exploring Three Levels of Driving Automation</h1>
+        <h5>ICCV 2025 Tutorial</h5>
+        <p>
+          <i class="fa fa-calendar-days"></i> October 19, 8:50 - 12:10 HST <br>
+          <i class="fa fa-location-dot"></i> Hawaii Convention Center, Room 308A
+        </p>
+      </div> <!-- .container -->
+    </div> <!-- #hero -->
+    
+    <!-- YouTube Video Section -->
+    <div id="video" class="section" style="background-color: #f8f9fa; padding: 60px 0;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="ratio ratio-16x9">
+              <video controls autoplay loop muted style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="/assets/images/avatars/drivex.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="intro" class="section">
+      <div class="container">
+        <h2>Introduction</h2>
+        <p>
+          Self-driving technologies have demonstrated significant potential to transform human mobility. However, single-agent systems face inherent limitations in perception and decision-making capabilities. Transitioning from self-driving vehicles to cooperative multi-vehicle systems and large-scale intelligent transportation systems is essential to enable safer and more efficient mobility. However, realizing such sophisticated mobility systems introduces significant challenges, requiring comprehensive tools and models, simulation environments, real-world datasets, and deployment frameworks. This tutorial will delve into key areas of driving automation, beginning with advanced end-to-end self-driving techniques such as vision-language-action (VLA) models, interactive prediction and planning, and scenario generation. The tutorial emphasizes V2X communication and cooperative perception in real-world settings, as well as datasets including V2X-Real and V2XPnP. The tutorial also covers simulation and deployment frameworks for urban mobility, such as MetaDrive, MetaUrban, and UrbanSim. By bridging foundational research with real-world deployment, this tutorial offers practical insights into developing future-ready autonomous mobility systems.
+        </p>
+        <img src="assets/images/ICCV_DriveX_Tutorial_final.webp" alt="Autonomous Driving Overview" style="max-width: 100%; height: auto; margin-top: 20px;">
+      </div> <!-- .container -->
+    </div> <!-- .section -->
+    <div id="schedule" class="section">
+      <div class="container">
+        <h2>Schedule</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Time (GMT-10)</th>
+              <th scope="col">Programme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:50 - 09:00</td>
+              <td>Opening Remarks</td>
+            </tr>
+            <tr>
+              <td>09:00 - 09:30</td>
+              <td class="programme">
+                <p class="title">Foundation Models for Autonomous Driving: Past, Present, and Future</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Abstract]</a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Speaker Bio]</a></li>
+                </ul>
+                <p class="abstract">Foundation models are transforming autonomous driving by unifying perception, reasoning, and planning within a single multimodal learning framework. This tutorial introduces how recent advances in generative AI, spanning vision, language, and world modeling, enable autonomous systems to generalize beyond closed datasets and handle long-tail real-world scenarios. We begin by revisiting the limitations of modular and hybrid AV pipelines and discuss how foundation models bring unified optimization, contextual reasoning, and improved interpretability. The tutorial surveys state-of-the-art vision-language-action frameworks such as LINGO-2, DriveVLM, EMMA, ORION, and AutoVLA, highlighting how language serves as both an interface for human interaction and a medium for model reasoning and decision-making. We further explore emerging techniques in reinforcement fine-tuning, alignment of actions with linguistic reasoning, and continual learning for safe, efficient post-training.
+                </p>
+                <p class="speaker bio">Zhiyu Huang is a postdoctoral scholar at the UCLA Mobility Lab, working under the guidance of Prof. Jiaqi Ma. He was previously a research intern at NVIDIA Research's Autonomous Vehicle Group and a visiting student researcher at UC Berkeley's Mechanical Systems Control (MSC) Lab. He received his Ph.D. from Nanyang Technological University (NTU), where he conducted research in the Automated Driving and Human-Machine System (AutoMan) Lab under the supervision of Prof. Chen Lyu.</p>
+                <div class="speaker d-flex">
+                  <div class="avatar">
+                    <img src="/assets/images/avatars/zhiyu.webp">
+                  </div> <!-- .avatar -->
+                  <div class="desc">
+                    <span class="name">Zhiyu Huang</span><br>
+                    <span class="position">Postdoctoral Researcher, UCLA</span>
+                  </div> <!-- .desc -->
+                </div> <!-- .speaker -->
+              </td>
+            </tr>
+            <tr>
+              <td>09:30 - 10:00</td>
+              <td class="programme">
+                <p class="title">Towards End-to-End Cooperative Automation with Multi-agent Spatio-temporal Scene Understanding</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Abstract]</a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Speaker Bio]</a></li>
+                </ul>
+                <p class="abstract">Vehicle-to-Everything (V2X) technologies offer a promising paradigm to mitigate the limitations of constrained observability in single-vehicle systems through information exchange. However, existing cooperative systems are limited in cooperative perception tasks with single-frame multi-agent fusion, leading to a constrained scenario understanding without temporal cues. This tutorial will explore how cooperative systems can achieve a comprehensive spatio-temporal scene understanding and be jointly optimized for the full autonomy stack: perception, prediction, and planning. The tutorial will begin by introducing V2XPnP-Seq, the first real-world sequential dataset supporting all V2X collaboration modes (vehicle-centric, infrastructure-centric, V2V, and I2I). Attendees will learn how to leverage this dataset and its comprehensive benchmark, which evaluates 11 distinct fusion methods, to validate their own cooperative models. Next, the tutorial will delve into V2XPnP, a novel intermediate fusion end-to-end framework that operates within a single communication step. Compared to traditional multi-step strategies, this framework achieves a 12% gain in perception and prediction accuracy while reducing communication overhead by 5×. Training such a complex multi-agent, multi-frame, and multi-task system, however, poses significant challenges. To address this, TurboTrain will be presented, an efficient training paradigm that integrates spatio-temporal pretraining with balanced fine-tuning. Participants will gain insights into how this approach achieves 2× faster convergence and improved performance, while preserving the deployment of task-agnostic spatio-temporal features. Finally, the discussion will extend to the crucial task of planning. Here, Risk Map as Middleware (RiskMM) is introduced as an interpretable cooperative end-to-end planning framework that explicitly models agent interactions and risks. This approach enhances the transparency and trustworthiness of autonomous driving systems. Through this progressive exploration, attendees will gain a holistic understanding of the state-of-the-art in multi-agent cooperative systems and will be equipped with the knowledge to build, train, and evaluate their own end-to-end spatio-temporal V2X solutions. </p>
+                <p class="bio">Zewei Zhou is a Ph.D. student in the UCLA Mobility Lab at the University of California, Los Angeles (UCLA), advised by Prof. Jiaqi Ma. He received his master’s degree from Tongji University with the honor of Shanghai Outstanding Graduate, and conducted research at the Institute of Intelligent Vehicles (TJU-IIV) under the supervision of Prof. Yanjun Huang and Prof. Zhuoping Yu.</p>
+                <div class="speaker d-flex">
+                  <div class="avatar">
+                    <img src="/assets/images/avatars/zewei.webp">
+                  </div> <!-- .avatar -->
+                  <div class="desc">
+                    <span class="name">Zewei Zhou</span><br>
+                    <span class="position">PhD Candidate, UCLA</span>
+                  </div> <!-- .desc -->
+                </div> <!-- .speaker -->
+              </td>
+            </tr>
+            <tr>
+              <td>10:00 - 10:30</td>
+              <td class="programme">
+                <p class="title">Bridging Simulation and Reality in Cooperative V2X Systems</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Abstract]</a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Speaker Bio]</a></li>
+                </ul>
+                <p class="abstract">Bridging the gap between simulation and deployment for cooperative V2X perception demands algorithms and systems that remain robust to bandwidth limits, latency spikes, and localization/synchronization errors—yet are also reproducible and scalable for research. This tutorial surveys an end-to-end sim-to-real pipeline and proposes design patterns that make cooperative perception practical “from sims to streets.” We begin with OpenCDA-ROS, which synthesizes ROS’s real-world messaging with the OpenCDA ecosystem to let researchers migrate cooperative perception, mapping/digital-twin, decision-making, and planning modules bidirectionally between simulation and field platforms, thereby narrowing the sim-to-real gap for CDA workflows. On this foundation, we present CooperFuse, a real-time late-fusion framework that operates on standardized detection outputs—minimizing communication overhead and protecting model IP—while adding multi-agent time synchronization and HD-map LiDAR-IMU localization. CooperFuse augments score-based fusion with kinematic/dynamic and size-consistency priors to stabilize headings, positions, and box scales across agents, improving 3D detection under heterogeneous models at smart intersections. Moving beyond detections, V2X-ReaLO is a ROS-based online framework that integrates early, late, and intermediate fusion and—critically—delivers the first practical demonstration that exchanging compressed BEV feature tensors among vehicles/infrastructure is feasible in real traffic, with measured bandwidth/latency constraints. It also extends V2X-Real into synchronized ROS bags (25,028 frames; 6,850 annotated keyframes), enabling fair, real-time evaluation across V2V/V2I/I2I modes under deployment-like conditions.</p>
+                <p class="bio">Zhaoliang Zheng is a Fifth-year Ph.D candidate in Electrical and Computer Engineering at UCLA Mobility Lab, advised by Professor Jiaqi Ma. He received his M.S degree in UCSD, supervised by Prof. Falko Kuester and Prof. Thomas Bewley. His research focuses on cooperative perception, multi-sensor fusion, and real-time learning systems for mobile robots.</p>
+                <div class="speaker d-flex">
+                  <div class="avatar">
+                    <img src="/assets/images/avatars/liang.jpg">
+                  </div> <!-- .avatar -->
+                  <div class="desc">
+                    <span class="name">Zhaoliang Zheng</span><br>
+                    <span class="position">PhD Candidate, UCLA</span>
+                  </div> <!-- .desc -->
+                </div> <!-- .speaker -->
+              </td>
+            </tr>
+            <tr>
+              <td>10:30 - 10:40</td>
+              <td>Coffee Break</td>
+            </tr>
+            <tr>
+              <td>10:40 - 11:20</td>
+              <td class="programme">
+                <p class="title">From Pre-Training to Post-Training: Building an Efficient V2X Cooperative Perception System</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Abstract]</a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Speaker Bio]</a></li>
+                </ul>
+                <p class="abstract">Recent advances in cooperative perception have demonstrated significant performance gains for autonomous driving through Vehicle-to-Everything (V2X) communication. However, real-world deployment remains challenging due to high data requirements, prohibitive training costs, and strict real-time inference constraints under bandwidth-limited conditions. This tutorial provides a full-stack perspective on designing efficient V2X systems across the learning and deployment pipeline. In the first part, we will introduce data-efficient and training-efficient pretraining strategies, including CooPre (collaborative pre-training for V2X) and TurboTrain (multi-task multi-agent pre-training). In the second part, we will focus on inference-efficient and resource-friendly deployment techniques, highlighting QuantV2X, a fully quantized cooperative perception system. Finally, the tutorial will conclude with a hands-on coding session, where we will walk over with the audience with core components of an efficient V2X ecosystem, bridging algorithmic design with practical deployment.</p>
+                <p class="bio">Seth Z. Zhao is a second-year Ph.D. student in Computer Science at UCLA, advised by Professors Bolei Zhou and Jiaqi Ma. He previously earned his M.S. and B.A. in Computer Science from UC Berkeley, where he conducted research under the guidance of Professors Masayoshi Tomizuka, Allen Yang, and Constance Chang-Hasnain.</p>
+                <div class="speaker d-flex">
+                  <div class="avatar">
+                    <img src="/assets/images/avatars/seth.webp">
+                  </div> <!-- .avatar -->
+                  <div class="desc">
+                    <span class="name">Seth Z. Zhao</span><br>
+                    <span class="position">PhD Candidate, UCLA</span>
+                  </div> <!-- .desc -->
+                </div> <!-- .speaker -->
+              </td>
+            </tr>
+            <tr>
+              <td>11:20 - 12:00</td>
+              <td class="programme">
+                <p class="title">Building Scalable, Human-Centric Physical AI Systems</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Abstract]</a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)">[Speaker Bio]</a></li>
+                </ul>
+                <p class="abstract">Large language models and generative models have made remarkable progress by scaling with internet-scale data. In contrast, physical AI, intelligent agents that perceive, decide, and act in the real world, still lags behind. Two key challenges lie in the mismatch between how robots learn and how internet data is created, as well as the critical safety concerns that arise when interacting with humans in the physical world. In this tutorial, I will discuss how to build scalable, human-centric physical AI systems by rethinking both the usage of data and the modeling of humans. I will introduce a three-pronged recipe for scalable, human-centric robot learning: 1) Simulation, which provides a controllable and efficient environment for training interactive behaviors at scale; 2) Human-created videos, which capture the visual complexity and semantic richness of the real world that simulations often lack; and 3) Human modeling, which brings realistic dynamics into simulated environments, helping to improve the safety and social compliance of trained robots. Finally, I will discuss how these components can be harmonized to enable the next generation of scalable, generalizable physical AI systems.</p>
+                <p class="bio">Wayne Wu is a Research Associate in the Department of Computer Science at the University of California, Los Angeles, working with Prof. Bolei Zhou. Prior to this, he was a Research Scientist at Shanghai AI Lab, where he led the Virtual Human Group. He also served as a Visiting Scholar at Nanyang Technological University, collaborating with Prof. Chen Change Loy. He earned his Ph.D. in June 2022 from the Department of Computer Science and Technology at Tsinghua University.                </p>
+                <div class="speaker d-flex">
+                  <div class="avatar">
+                    <img src="/assets/images/avatars/wayne.webp">
+                  </div> <!-- .avatar -->
+                  <div class="desc">
+                    <span class="name">Wayne Wu</span><br>
+                    <span class="position">Research Associate, UCLA</span>
+                  </div> <!-- .desc -->
+                </div> <!-- .speaker -->
+              </td>
+            </tr>
+            <tr>
+              <td>12:00 - 12:10</td>
+              <td>Ending Remarks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- .container -->
+    </div> <!-- .section -->
+    <div id="resources" class="section">
+      <div class="container">
+        <h2>Resources</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Project</th>
+              <th scope="col">Description</th>
+              <th scope="col">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>AutoVLA</td>
+              <td>A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning. </td>
+              <td><a href="https://github.com/ucla-mobility/AutoVLA" target="_blank">github.com/ucla-mobility/AutoVLA</a></td>
+            </tr>
+            <tr>
+              <td>Awesome-VLA-for-AD</td>
+              <td>A collection of resources for Vision-Language-Action models for autonomous driving.</td>
+              <td><a href="https://github.com/worldbench/awesome-vla-for-ad" target="_blank">github.com/worldbench/awesome-vla-for-ad</a></td>
+            </tr>
+            <tr>
+              <td>OpenCDA</td>
+              <td>An open co-simulation-based research/engineering framework integrated with prototype cooperative driving automation pipelines.</td>
+              <td><a href="https://github.com/ucla-mobility/OpenCDA" target="_blank">github.com/ucla-mobility/OpenCDA</a></td>
+            </tr>
+            <tr>
+              <td>V2X-Real</td>
+              <td>The first large-scale real-world dataset for Vehicle-to-Everything (V2X) cooperative perception.</td>
+              <td><a href="https://mobility-lab.seas.ucla.edu/v2x-real/" target="_blank">mobility-lab.seas.ucla.edu/v2x-real</a></td>
+            </tr>
+            <tr>
+              <td>V2XPnP</td>
+              <td>The first open-source V2X spatio-temporal fusion framework for cooperative perception and prediction.</td>
+              <td><a href="https://mobility-lab.seas.ucla.edu/v2xpnp/" target="_blank">mobility-lab.seas.ucla.edu/v2xpnp</a></td>
+            </tr>
+            <tr>
+              <td>QuantV2X</td>
+              <td>A fully quantized multi-agent perception pipeline for V2X systems.</td>
+              <td><a href="https://github.com/ucla-mobility/QuantV2X" target="_blank">github.com/ucla-mobility/QuantV2X</a></td>
+            </tr>
+            <tr>
+              <td>TurboTrain</td>
+              <td>A training paradigm for cooperative models that integrates spatio-temporal pretraining with balanced fine-tuning.</td>
+              <td><a href="https://github.com/ucla-mobility/TurboTrain" target="_blank">github.com/ucla-mobility/TurboTrain</a></td>
+            </tr>
+            <tr>
+              <td>MetaDrive</td>
+              <td>An Open-source Driving Simulator for AI and Autonomy Research.</td>
+              <td><a href="https://github.com/metadriverse/metadrive" target="_blank">github.com/metadriverse/metadrive</a></td>
+            </tr>
+            <tr>
+              <td>MetaUrban</td>
+              <td>An embodied AI simulation platform for urban micromobility</td>
+              <td><a href="https://github.com/metadriverse/metaurban" target="_blank">github.com/metadriverse/metaurban</a></td>
+            </tr>
+            <tr>
+              <td>UrbanSim</td>
+              <td>A large-scale robot learning platform for urban spaces, built on NVIDIA Omniverse.</td>
+              <td><a href="https://github.com/metadriverse/urban-sim" target="_blank">github.com/metadriverse/urban-sim</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- .container -->
+    </div> <!-- .section -->
+    <div id="organizers" class="section">
+      <div class="container">
+        <h2>Organizers</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-6 organizer-item">
+            <div class="card">
+              <img src="/assets/images/avatars/zhiyu.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Zhiyu Huang</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://mczhi.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                  <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=aLZEVCsAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+                  <li class="list-inline-item"><a href="https://github.com/MCZhi" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/wayne.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Wayne Wu</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://wywu.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                  <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=uWfZKz4AAAAJ" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+                  <li class="list-inline-item"><a href="https://github.com/wywu" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/zewei.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Zewei Zhou</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://zewei-zhou.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                  <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=TzhyHbYAAAAJ" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+                  <li class="list-inline-item"><a href="https://github.com/Zewei-Zhou" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/seth.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Seth Z. Zhao</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://sethzhao506.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                  <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=OfsIi_4AAAAJ" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+                  <li class="list-inline-item"><a href="https://github.com/sethzhao506" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/liang.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Zhaoliang Zheng</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://zhz03.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                  <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=SyR4O7YAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+                  <li class="list-inline-item"><a href="https://github.com/zhz03" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/yun.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Yun Zhang</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://handsomeyun.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                  <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=XXevN4cAAAAJ" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+                  <li class="list-inline-item"><a href="https://github.com/HandsomeYun" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/tianhui.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Tianhui Cai</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://tianhui-li.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                  <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=6YqkXM0AAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+                  <li class="list-inline-item"><a href="https://github.com/Vickycth" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/songrui.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Rui Song</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://github.com/rruisong" target="_blank"><i class="fa fa-house"></i></a></li>
+                  <li class="list-inline-item"><a href="https://scholar.google.de/citations?user=9IupKeQAAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a></li>
+                  <li class="list-inline-item"><a href="https://rruisong.github.io/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/bolei.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Bolei Zhou</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://boleizhou.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card">
+              <img src="/assets/images/avatars/jiaqi.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Jiaqi Ma</h5>
+                <p class="card-text">UCLA</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://mobility-lab.seas.ucla.edu/about/" target="_blank"><i class="fa fa-house"></i></a></li>
+                </ul>
+              </div> <!-- .card-body -->
+            </div> <!-- .card -->
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .section -->
+    <div id="acknowledgments" class="section">
+      <div class="container">
+        <h2>Acknowledgments</h2>
+        <p>
+          This tutorial was supported by the National Science Foundation (NSF) under Grants CNS-2235012, IIS-2339769, and TI-2346267; the NSF POSE project DriveX: An Open-Source Ecosystem for Automated Driving and Intelligent Transportation Research; the Federal Highway Administration (FHWA) CP-X project Advancing Cooperative Perception in Transportation Applications Toward Deployment; and the Center of Excellence on New Mobility and Automated Vehicles.
+        </p>
+      </div> <!-- .container -->
+    </div> <!-- .section -->
+  </div> <!-- #content -->
+  <div id="footer">
+    <div class="container">
+      <img src="/assets/images/logo.png">
+      <p>&copy;2025 <i>Beyond Self-Driving: Exploring Three Levels of Driving Automation</i> Tutorial</p>
+    </div> <!-- .container -->
+  </div> <!-- #footer -->
+  <script type="text/javascript">
+    $(document).on('scroll', function() {
+      let currentOffset = $(window).scrollTop() + 80,
+          currentSection = "",
+          sections = ["video", "intro", "schedule", "resources", "organizers", "acknowledgments"];
+
+      for (let i = 0; i < sections.length; ++i) {
+        if (currentOffset < $('#' + sections[i]).offset().top) {
+          break;
+        }
+        currentSection = sections[i];
+      }
+
+      let $navbar = $('.navbar'),
+          $navLinks = $navbar.find('a');
+
+      $navLinks.parent().removeClass('active');
+      $navLinks.each(function() {
+        if ($(this).attr('href') === '#' + currentSection) {
+          $(this).parent().addClass('active');
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(".programme").on("click", ".list-inline-item", function(e) {
+      if ($(this).text() === "[Abstract]") {
+        $(this).parent().siblings(".bio").hide();
+        $(this).parent().siblings(".abstract").toggle();
+      } else if ($(this).text() === "[Speaker Bio]") {
+        $(this).parent().siblings(".abstract").hide();
+        $(this).parent().siblings(".bio").toggle();
+      }
+    })
+  </script>
+</body>
+</html>
